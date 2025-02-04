@@ -8,8 +8,10 @@
 </head>
 <body>
     <div class="container" layout:fragment="content">
-        <form action="/auths/login" method="post">
-        <!--<form action="/process_login" method="post">-->
+        <form action="/process_login" method="post">
+            <div class="row alert alert-danger center" role="alert" th:if="${param.error != null}">
+                <div>로그인 인증에 실패했습니다.</div>
+            </div>
             <div class="row">
                 <div class="col-xs-2">
                     <input type="email" name="username"  class="form-control" placeholder="Email" />

@@ -25,3 +25,6 @@ server:
   servlet:
     encoding:
       force-response: true
+mail:
+  address:
+    admin: admin@gmail.com
